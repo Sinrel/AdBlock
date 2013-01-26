@@ -1,0 +1,5 @@
+name: adBlock
+version: 1.0
+author: Akirus
+main: org.sinrel.adblock.AdBlock
+description: blocked servers commercial
