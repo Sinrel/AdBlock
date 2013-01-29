@@ -18,13 +18,13 @@ import java.util.regex.Pattern;
 
 public class AdBlock extends JavaPlugin implements Listener{
 	
-	List<String> regexps = new ArrayList<>();
-	List<Pattern> patterns = new ArrayList<Pattern>();
-	boolean banEnabled = false;
-	boolean kickEnabled = false;
-	boolean replaceEnabled = false;
-	String kickMessage = "";
-	String replaceText = "";
+	private List<String> regexps = new ArrayList<>();
+	private List<Pattern> patterns = new ArrayList<Pattern>();
+	private boolean banEnabled = false;
+	private boolean kickEnabled = false;
+	private boolean replaceEnabled = false;
+	private String kickMessage = "";
+	private String replaceText = "";
 	
 	@EventHandler
 	public void onPlayerChat(AsyncPlayerChatEvent event){
@@ -38,6 +38,8 @@ public class AdBlock extends JavaPlugin implements Listener{
 					event.setMessage(replaceText);
 				}
 				
+				
+				
 				if(banEnabled){
 					player.setBanned(true);
 					player.kickPlayer(kickMessage);
@@ -46,8 +48,11 @@ public class AdBlock extends JavaPlugin implements Listener{
 					player.kickPlayer(kickMessage);
 					return;
 				}
+				
+				
 			}
 		}
+		
 	}
 
 	@Override
