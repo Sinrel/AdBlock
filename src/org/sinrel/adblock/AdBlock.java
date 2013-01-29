@@ -38,8 +38,6 @@ public class AdBlock extends JavaPlugin implements Listener{
 					event.setMessage(replaceText);
 				}
 				
-				
-				
 				if(banEnabled){
 					player.setBanned(true);
 					player.kickPlayer(kickMessage);
@@ -48,8 +46,6 @@ public class AdBlock extends JavaPlugin implements Listener{
 					player.kickPlayer(kickMessage);
 					return;
 				}
-				
-				
 			}
 		}
 		
