@@ -1,6 +1,6 @@
-name: adBlock
-version: 1.1
-author: Akirus
+name: AdBlock
+version: 1.2
+author: Sinrel Group
 main: org.sinrel.adblock.AdBlock
 description: blocked servers commercial
 
